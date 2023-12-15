@@ -1,0 +1,85 @@
+body {
+    background-color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+    
+    display: grid;
+    grid-template-rows: 5vh 5vh 85vh 5vh;
+    grid-template-columns: 10vw 90vw;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "aside main"
+        "footer footer";
+}
+
+header {
+    background-color: #372b2b;
+    color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: header;
+}
+
+nav {
+    background-color: #3b3549;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: nav;
+}
+
+main {
+    
+    background-color: gray;
+    color: antiquewhite;
+    border: 1px solid rgb(255, 0, 0);
+  
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;   
+    
+    grid-area: main;
+    overflow-y: auto;
+    
+
+}
+
+main .section {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+
+    width: 50vw;
+    min-height: 20vh;
+}
+
+aside {
+    background-color: #30382d;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: aside;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   grid-area: footer;
+}
